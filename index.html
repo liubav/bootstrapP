@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms, Tables and Lists</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<main>
+		<header>
+			<h1>FORMS AND TABLES</h1>
+		</header>
+		<article>
+			<section id="forms">
+				<h2>FORMS</h2>
+				<h3>Basic Controls </h3>
+				<form action="https://formspree.io/kliuchyk@gmail.com" method="POST">
+					<label for="name">Name</label><br>
+					<input type="text" name="name" id="name" placeholder="type your name here..." required><br>
+
+					<label for="password">Password</label><br>
+					<input type="password" name="password" id="password" placeholder="your password goes here..." required><br><br>
+
+					<label for="t-area">Give some nice feedback</label><br>
+					<textarea name="textarea" id="t-area" cols="30" rows="10" >
+					</textarea><br>
+
+					<h2>Buttons</h2>
+
+					<input type="button" value="I'm a button" onclick="alert('Hello there!')"><br><br>
+					<input type="submit" value="Submit Query"><br>
+
+					<h2>Additional Controls</h2>
+					
+					<fieldset>
+						<legend>Pawn Promotion</legend>
+							<input type="radio" name="piece" value="queen" id="pp-queen" checked>
+							<label for="pp-queen">Queen</label>
+							<input type="radio" name="piece" value="knight" id="pp-knight">
+							<label for="pp-knight">Knight</label><br>
+							<input type="radio" name="piece" value="bishop" id="pp-bishop">
+							<label for="pp-bishop">Bishop</label>
+							<input type="radio" name="piece" value="rook" id="pp-rook">
+							<label for="pp-rook">Rook</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Pieces left</legend>
+							<input type="checkbox" name="piece2" id="king" value="king">
+							<label for="king">King</label><br>
+							<input type="checkbox" name="piece2" id="queen" value="queen">
+							<label for="queen">Queen</label><br>
+							<input type="checkbox" name="piece2" id="knight" value="knight">
+							<label for="knight">Knight</label><br>
+							<input type="checkbox" name="piece2" id="rook" value="rook" checked>
+							<label for="rook">Rook</label>
+					</fieldset><br>
+
+					<label for="favorite">Select your favorite pice</label><br>
+					<select name="select" id="favorite">
+						<option value="queen">Quenn</option>
+						<option value="king">King</option>
+						<option value="bishop" selected>Bishop</option>
+						<option value="rook">Rook</option>
+						<option value="bishop">Bishop</option>
+						<option value="pawn">Pawn</option>
+					</select><br><br>
+
+					<label for="u-pic">Upload a picture <br> <input type="file"></label><br>
+
+					<h2>Special input types</h2>
+
+					<label for="email1">Email</label><br>
+					<input id="email1"  name="email" type="email" placeholder="name@mail.com"><br>
+
+					<label for="web">Website</label><br>
+					<input id="web"  name="url" type="url"><br>
+
+					<label for="phone">Phone</label><br>
+					<input id="phone" name="phoneNumber" type="tel"><br>
+
+					<label for="range1">Range (low or high)</label><br>
+					<input id="range1" type="range"><br>
+
+					<label for="search1">Search</label><br>
+					<input id="search1" name="searching" type="search"><br>
+
+					<label for="hue">Favorite Hue</label><br>
+					<input type="color" name="hueOption" id="hue"><br>
+
+					<label for="guess">Choose a number</label><br>
+					<input type="number" name="number" id="guess"><br>
+
+					<label for="title">Your Title</label><br>
+					<input type="text" id="title" name="title" list="titles">
+						<datalist id="titles">
+							<option value="Mr.">
+							<option value="Ms.">
+							<option value="Mrs.">
+							<option value="Miss.">
+							<option value="Dr.">
+						</datalist><br>
+
+						<input type="submit" name="submitF" value="SEND"><br>
+
+				</form>
+			</section> <!-- forms -->
+			<section>
+
+				<h2>Tables</h2>
+
+				<table border="1">
+					<caption>A Test Table</caption>
+					<tr>
+						<th rowspan="2"></th>
+						<th colspan="2">Average</th>
+						<th rowspan="2">Red eyes</th>
+					</tr>
+					<tr>
+						<th>height</th>
+						<th>weight</th>
+					</tr>
+					<tr>
+						<td>Males</td>
+						<td>1.9</td>
+						<td>0.0009</td>
+						<td>40%</td>
+					</tr>
+					<tr>
+						<td>Females</td>
+						<td>1.7</td>
+						<td>0.0002</td>
+						<td>43%</td>
+					</tr>
+				</table><br>
+
+				<table border="1">
+					<tr>
+						<th colspan="3"> an HTML table with a cell that spans across three collumns</th>
+					</tr>
+					<tr>
+						<td>lorem</td>
+						<td>ipsum</td>
+						<td>dolor</td>
+					</tr>
+					<tr>
+						<td>hello</td>
+						<td>good</td>
+						<td>bye</td>
+					</tr>
+					<tr>
+						<td colspan="2">this cell spans across two columns</td>
+						<td>!!!</td>
+					</tr>
+				</table><br>
+
+				<table border="1">
+					<tr>
+						<th rowspan="2">header</th>
+						<th>header</th>
+						<th>header</th>
+					</tr>
+					<tr>
+						<th>header</th>
+						<th>header</th>
+					</tr>
+					<tr>
+						<td>january</td>
+						<td>12</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<td>fabruary</td>
+						<td>12</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td colspan="2">121111</td>
+					</tr>
+				</table>
+			</section> <!-- </section> tables -->
+			<section>
+				<h2>Lists</h2>
+				
+				<h3>Unordered list</h3>
+
+				<ul> SQL2Tree Example
+					<li>Root
+						<ul>
+							<li>Category 1
+								<ul>
+									<li id="point">Menu Item X</li>
+									<li id="point">Menu Item Y</li>
+									<li id="point">Menu Item Z</li>
+								</ul>
+							</li>
+							<li>Category 2
+								<ul>
+									<li id="point">Other Menu 1</li>
+									<li id="point">Other Menu 2</li>
+									<li id="point">Other Menu 3</li>
+								</ul>
+							</li>
+							<li>Empty Category</li>
+						</ul>
+					</li>
+				</ul>			
+
+				<h3>Ordered list</h3>
+				<p>Nesting list</p>
+				<ol type="i">
+					<li>item 1
+						<ol type="I">
+							<li>sub item 1</li>
+							<li>sub item 2
+								<ol>
+									<li>sub item 1</li>
+									<li>sub item 2</li>
+								</ol>
+							</li>
+						</ol>
+					</li>
+					<li>item 2
+						<ol type="1">
+							<li>sub item 1
+								<ol type="a">
+									<li>sub item 1</li>
+									<li>sub item 1</li>
+								</ol>
+							</li>
+							<li>sub item 2</li>
+						</ol>
+					</li>
+					<li>item 3</li>
+				</ol>
+
+			</section> <!-- lists -->
+		</article>
+	</main>
+</body>
+</html>

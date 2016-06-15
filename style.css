@@ -1,0 +1,11 @@
+#point:first-child {
+    color: green;
+}
+
+#point:last-child {
+    color: yellow;
+}
+
+#point:nth-child(2) {
+    color: red;
+}
